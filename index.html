@@ -2,11 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Alexey Marchenko — Art Director and AI Production." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Selected work by Alexey Marchenko, Art Director and AI Production specialist." />
     <meta name="theme-color" content="#ffffff" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'" />
-    <title>Alexey Marchenko — Art Director / AI Production</title>
+    <meta name="color-scheme" content="only light" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; media-src 'self'; connect-src 'self'; worker-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Alexey Marchenko - Art Director / AI Production" />
+    <meta property="og:description" content="Selected work in art direction and AI production." />
+    <meta property="og:url" content="https://leshamarchenko.github.io/" />
+    <meta property="og:image" content="https://leshamarchenko.github.io/assets/posters/optimized/yapay-1280.jpg" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <title>Alexey Marchenko - Art Director / AI Production</title>
+    <link rel="canonical" href="https://leshamarchenko.github.io/" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="preload" href="./assets/fonts/AzeretMono-Regular.ttf" as="font" type="font/ttf" crossorigin />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
@@ -23,36 +44,235 @@
 
       <section class="work-index" aria-label="Selected works">
         <article class="project-card is-open">
-          <button class="project-row" type="button" aria-expanded="true"><span>YANDEX PAY</span><span>AI COMMERCIAL</span></button>
-          <div class="project-panel"><div class="project-panel-inner"><button class="project-media" type="button" data-title="YANDEX PAY" data-type="AI COMMERCIAL" data-description="AI visualisation and animation for Yandex Pay. The project developed the character, locations and scenes around a body-mounted camera perspective."><img src="./assets/posters/yapay.mp4.png" alt="Yandex Pay project still" /><video muted playsinline preload="metadata" poster="./assets/posters/yapay.mp4.png" src="./assets/videos/yapay.mp4"></video></button></div></div>
+          <button class="project-row" type="button" aria-expanded="true" aria-controls="project-yapay">
+            <span>YANDEX PAY</span><span>AI COMMERCIAL</span>
+          </button>
+          <div class="project-panel" id="project-yapay">
+            <div class="project-panel-inner">
+              <button
+                class="project-media"
+                type="button"
+                aria-label="Play Yandex Pay video"
+                data-video="./assets/videos/yapay.mp4"
+                data-title="YANDEX PAY"
+                data-type="AI COMMERCIAL"
+                data-description="AI visualisation and animation for Yandex Pay. The project developed the character, locations and scenes around a body-mounted camera perspective."
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    srcset="./assets/posters/optimized/yapay-640.webp 640w, ./assets/posters/optimized/yapay-1280.webp 1280w"
+                    sizes="(min-width: 700px) 560px, 100vw"
+                  />
+                  <img
+                    src="./assets/posters/optimized/yapay-1280.jpg"
+                    alt="Yandex Pay project still"
+                    width="1280"
+                    height="720"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                  />
+                </picture>
+              </button>
+            </div>
+          </div>
         </article>
+
         <article class="project-card">
-          <button class="project-row" type="button" aria-expanded="false"><span>T2</span><span>NEUROMATIC</span></button>
-          <div class="project-panel"><div class="project-panel-inner"><button class="project-media" type="button" data-title="T2" data-type="NEUROMATIC" data-description="Neuromatic for the T2 advertising communication."><img src="./assets/posters/t2-30.mp4.png" alt="T2 project still" /><video muted playsinline preload="metadata" poster="./assets/posters/t2-30.mp4.png" src="./assets/videos/t2-30.mp4"></video></button></div></div>
+          <button class="project-row" type="button" aria-expanded="false" aria-controls="project-t2-30">
+            <span>T2</span><span>NEUROMATIC</span>
+          </button>
+          <div class="project-panel" id="project-t2-30">
+            <div class="project-panel-inner">
+              <button
+                class="project-media"
+                type="button"
+                aria-label="Play T2 video"
+                data-video="./assets/videos/t2-30.mp4"
+                data-title="T2"
+                data-type="NEUROMATIC"
+                data-description="Neuromatic for the T2 advertising communication."
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    data-srcset="./assets/posters/optimized/t2-30-640.webp 640w, ./assets/posters/optimized/t2-30-1280.webp 1280w"
+                    sizes="(min-width: 700px) 560px, 100vw"
+                  />
+                  <img data-src="./assets/posters/optimized/t2-30-1280.jpg" alt="T2 project still" width="1280" height="720" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+            </div>
+          </div>
         </article>
+
         <article class="project-card">
-          <button class="project-row" type="button" aria-expanded="false"><span>PYATEROCHKA</span><span>AI PRODUCTION SHOTS</span></button>
-          <div class="project-panel"><div class="project-panel-inner"><button class="project-media" type="button" data-title="PYATEROCHKA" data-type="AI PRODUCTION SHOTS" data-description="AI production shots for a Pyaterochka TV commercial: product visuals, transitions, food motion and the final packshot within the wider production."><img src="./assets/posters/5ka-vip.mp4.png" alt="Pyaterochka project still" /><video muted playsinline preload="metadata" poster="./assets/posters/5ka-vip.mp4.png" src="./assets/videos/5ka-vip.mp4"></video></button></div></div>
+          <button class="project-row" type="button" aria-expanded="false" aria-controls="project-5ka">
+            <span>PYATEROCHKA</span><span>AI PRODUCTION SHOTS</span>
+          </button>
+          <div class="project-panel" id="project-5ka">
+            <div class="project-panel-inner">
+              <button
+                class="project-media"
+                type="button"
+                aria-label="Play Pyaterochka video"
+                data-video="./assets/videos/5ka-vip.mp4"
+                data-title="PYATEROCHKA"
+                data-type="AI PRODUCTION SHOTS"
+                data-description="AI production shots for a Pyaterochka TV commercial: product visuals, transitions, food motion and the final packshot within the wider production."
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    data-srcset="./assets/posters/optimized/5ka-vip-640.webp 640w, ./assets/posters/optimized/5ka-vip-1280.webp 1280w"
+                    sizes="(min-width: 700px) 560px, 100vw"
+                  />
+                  <img data-src="./assets/posters/optimized/5ka-vip-1280.jpg" alt="Pyaterochka project still" width="1280" height="720" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+            </div>
+          </div>
         </article>
+
         <article class="project-card">
-          <button class="project-row" type="button" aria-expanded="false"><span>BURGER KING</span><span>NEUROMATIC</span></button>
-          <div class="project-panel"><div class="project-panel-inner"><button class="project-media" type="button" data-title="BURGER KING" data-type="NEUROMATIC" data-description="Neuromatic for a Burger King commercial."><img src="./assets/posters/bk-test.mp4.png" alt="Burger King project still" /><video muted playsinline preload="metadata" poster="./assets/posters/bk-test.mp4.png" src="./assets/videos/bk-test.mp4"></video></button></div></div>
+          <button class="project-row" type="button" aria-expanded="false" aria-controls="project-bk">
+            <span>BURGER KING</span><span>NEUROMATIC</span>
+          </button>
+          <div class="project-panel" id="project-bk">
+            <div class="project-panel-inner">
+              <button
+                class="project-media"
+                type="button"
+                aria-label="Play Burger King video"
+                data-video="./assets/videos/bk-test.mp4"
+                data-title="BURGER KING"
+                data-type="NEUROMATIC"
+                data-description="Neuromatic for a Burger King commercial."
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    data-srcset="./assets/posters/optimized/bk-test-640.webp 640w, ./assets/posters/optimized/bk-test-1280.webp 1280w"
+                    sizes="(min-width: 700px) 560px, 100vw"
+                  />
+                  <img data-src="./assets/posters/optimized/bk-test-1280.jpg" alt="Burger King project still" width="1280" height="720" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+            </div>
+          </div>
         </article>
+
         <article class="project-card">
-          <button class="project-row" type="button" aria-expanded="false"><span>T2</span><span>NEUROMATIC</span></button>
-          <div class="project-panel"><div class="project-panel-inner"><button class="project-media" type="button" data-title="T2" data-type="NEUROMATIC" data-description="Neuromatic for the T2 advertising communication."><img src="./assets/posters/t2-15.mp4.png" alt="T2 project still" /><video muted playsinline preload="metadata" poster="./assets/posters/t2-15.mp4.png" src="./assets/videos/t2-15.mp4"></video></button></div></div>
+          <button class="project-row" type="button" aria-expanded="false" aria-controls="project-t2-15">
+            <span>T2</span><span>NEUROMATIC</span>
+          </button>
+          <div class="project-panel" id="project-t2-15">
+            <div class="project-panel-inner">
+              <button
+                class="project-media"
+                type="button"
+                aria-label="Play T2 video"
+                data-video="./assets/videos/t2-15.mp4"
+                data-title="T2"
+                data-type="NEUROMATIC"
+                data-description="Neuromatic for the T2 advertising communication."
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    data-srcset="./assets/posters/optimized/t2-15-640.webp 640w, ./assets/posters/optimized/t2-15-1280.webp 1280w"
+                    sizes="(min-width: 700px) 560px, 100vw"
+                  />
+                  <img data-src="./assets/posters/optimized/t2-15-1280.jpg" alt="T2 project still" width="1280" height="720" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+            </div>
+          </div>
         </article>
+
         <article class="project-card">
-          <button class="project-row" type="button" aria-expanded="false"><span>YANDEX PAY</span><span>KEY VISUAL</span></button>
-          <div class="project-panel"><div class="project-panel-inner"><button class="project-media" type="button" data-title="YANDEX PAY" data-type="KEY VISUAL" data-description="Key visual for Yandex Pay: the campaign image and visual system."><img src="./assets/posters/yandex-stickers-pay.png" alt="Yandex Pay key visual still" /><video muted playsinline preload="metadata" poster="./assets/posters/yandex-stickers-pay.png" src="./assets/videos/yandex-stickers-pay.mp4"></video></button></div></div>
+          <button class="project-row" type="button" aria-expanded="false" aria-controls="project-yandex-kv">
+            <span>YANDEX PAY</span><span>KEY VISUAL</span>
+          </button>
+          <div class="project-panel" id="project-yandex-kv">
+            <div class="project-panel-inner">
+              <button
+                class="project-media"
+                type="button"
+                aria-label="Play Yandex Pay key visual video"
+                data-video="./assets/videos/yandex-stickers-pay.mp4"
+                data-title="YANDEX PAY"
+                data-type="KEY VISUAL"
+                data-description="Key visual for Yandex Pay: the campaign image and visual system."
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    data-srcset="./assets/posters/optimized/yandex-stickers-pay-640.webp 640w, ./assets/posters/optimized/yandex-stickers-pay-1280.webp 1280w"
+                    sizes="(min-width: 700px) 560px, 100vw"
+                  />
+                  <img data-src="./assets/posters/optimized/yandex-stickers-pay-1280.jpg" alt="Yandex Pay key visual still" width="1280" height="720" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+            </div>
+          </div>
         </article>
+
         <article class="project-card">
-          <button class="project-row" type="button" aria-expanded="false"><span>YANDEX EDA</span><span>BIRTHDAY FILM</span></button>
-          <div class="project-panel"><div class="project-panel-inner"><button class="project-media" type="button" data-title="YANDEX EDA" data-type="BIRTHDAY FILM" data-description="Film made for Yandex Eda's birthday."><img src="./assets/posters/yandex-food.png" alt="Yandex Eda project still" /><video muted playsinline preload="metadata" poster="./assets/posters/yandex-food.png" src="./assets/videos/yandex-food.mp4"></video></button></div></div>
+          <button class="project-row" type="button" aria-expanded="false" aria-controls="project-yandex-food">
+            <span>YANDEX EDA</span><span>BIRTHDAY FILM</span>
+          </button>
+          <div class="project-panel" id="project-yandex-food">
+            <div class="project-panel-inner">
+              <button
+                class="project-media"
+                type="button"
+                aria-label="Play Yandex Eda video"
+                data-video="./assets/videos/yandex-food.mp4"
+                data-title="YANDEX EDA"
+                data-type="BIRTHDAY FILM"
+                data-description="Film made for Yandex Eda's birthday."
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    data-srcset="./assets/posters/optimized/yandex-food-640.webp 640w, ./assets/posters/optimized/yandex-food-1280.webp 1280w"
+                    sizes="(min-width: 700px) 560px, 100vw"
+                  />
+                  <img data-src="./assets/posters/optimized/yandex-food-1280.jpg" alt="Yandex Eda project still" width="1280" height="720" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+            </div>
+          </div>
         </article>
+
         <article class="project-card">
-          <button class="project-row" type="button" aria-expanded="false"><span>TIMIRYAZEVSKY PARK</span><span>AI COMMERCIAL</span></button>
-          <div class="project-panel"><div class="project-panel-inner"><button class="project-media" type="button" data-title="TIMIRYAZEVSKY PARK" data-type="AI COMMERCIAL" data-description="A full AI commercial for the Timiryazevsky Park residential complex."><img src="./assets/posters/timiryazevsky-park.png" alt="Timiryazevsky Park project still" /><video muted playsinline preload="metadata" poster="./assets/posters/timiryazevsky-park.png" src="./assets/videos/timiryazevsky-park.mp4"></video></button></div></div>
+          <button class="project-row" type="button" aria-expanded="false" aria-controls="project-tim-park">
+            <span>TIMIRYAZEVSKY PARK</span><span>AI COMMERCIAL</span>
+          </button>
+          <div class="project-panel" id="project-tim-park">
+            <div class="project-panel-inner">
+              <button
+                class="project-media"
+                type="button"
+                aria-label="Play Timiryazevsky Park video"
+                data-video="./assets/videos/timiryazevsky-park.mp4"
+                data-title="TIMIRYAZEVSKY PARK"
+                data-type="AI COMMERCIAL"
+                data-description="A full AI commercial for the Timiryazevsky Park residential complex."
+              >
+                <picture>
+                  <source
+                    type="image/webp"
+                    data-srcset="./assets/posters/optimized/timiryazevsky-park-640.webp 640w, ./assets/posters/optimized/timiryazevsky-park-1280.webp 1280w"
+                    sizes="(min-width: 700px) 560px, 100vw"
+                  />
+                  <img data-src="./assets/posters/optimized/timiryazevsky-park-1280.jpg" alt="Timiryazevsky Park project still" width="1280" height="720" loading="lazy" decoding="async" />
+                </picture>
+              </button>
+            </div>
+          </div>
         </article>
       </section>
 
@@ -63,14 +283,24 @@
       <p class="noscript-notice">JAVASCRIPT IS DISABLED. <a href="https://t.me/leshamarchenko">OPEN TELEGRAM</a></p>
     </noscript>
 
-    <div class="video-modal" id="videoModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
+    <div
+      class="video-modal"
+      id="videoModal"
+      aria-hidden="true"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modalTitle"
+      aria-describedby="modalDescription modalStatus"
+      inert
+    >
       <button class="modal-close" type="button" aria-label="Close video">CLOSE</button>
       <div class="video-modal-content">
-        <video controls playsinline preload="auto"></video>
+        <video controls playsinline webkit-playsinline preload="metadata"></video>
         <div class="video-details">
           <p id="modalType"></p>
           <h2 id="modalTitle"></h2>
-          <p id="modalDescription" aria-live="polite"></p>
+          <p id="modalDescription"></p>
+          <p class="video-status" id="modalStatus" aria-live="assertive" hidden></p>
         </div>
       </div>
     </div>
